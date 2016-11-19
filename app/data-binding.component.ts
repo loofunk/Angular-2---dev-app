@@ -11,5 +11,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 
 export class DataBindingComponent{
 
+    onClick(value: string)
+    {
+        alert(value);
+    }
     
 }

@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var DataBindingComponent = (function () {
     function DataBindingComponent() {
     }
+    DataBindingComponent.prototype.onClick = function (value) {
+        alert(value);
+    };
     DataBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

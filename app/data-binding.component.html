@@ -7,5 +7,6 @@
 <property-binding [result]=1355></property-binding>
 <hr>
 
-<h2> Event binding</h2>
-<fa-event-binding></fa-event-binding>
+<h2> Event binding/ Custom Events</h2>
+<b>this binds to an event from this component to the event binding component</b>
+<fa-event-binding (clicked)="onClick($event)"></fa-event-binding>

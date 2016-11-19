@@ -11,10 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var EventBindingComponent = (function () {
     function EventBindingComponent() {
+        this.clicked = new core_1.EventEmitter();
     }
     EventBindingComponent.prototype.onClicked = function () {
-        alert('mooooooooo!!!');
+        this.clicked.emit('Eventbindingcomponent says...it works!');
     };
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], EventBindingComponent.prototype, "clicked", void 0);
     EventBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
