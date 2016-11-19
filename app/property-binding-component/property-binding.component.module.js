@@ -1,33 +1,17 @@
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-// Angular Imports
-var core_1 = require('@angular/core');
-// This Module's Components
-var property_binding_component_1 = require('./property-binding.component');
-var PropertyBindingComponentModule = (function () {
-    function PropertyBindingComponentModule() {
-    }
-    PropertyBindingComponentModule = __decorate([
-        core_1.NgModule({
-            imports: [],
-            declarations: [
-                property_binding_component_1.PropertyBindingComponent,
-            ],
-            exports: [
-                property_binding_component_1.PropertyBindingComponent,
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PropertyBindingComponentModule);
-    return PropertyBindingComponentModule;
-}());
-exports.PropertyBindingComponentModule = PropertyBindingComponentModule;
+// // Angular Imports
+// import { NgModule } from '@angular/core';
+// // This Module's Components
+// import { PropertyBindingComponent } from './property-binding.component';
+// @NgModule({
+//     imports: [
+//     ],
+//     declarations: [
+//         PropertyBindingComponent,
+//     ],
+//     exports: [
+//         PropertyBindingComponent,
+//     ]
+// })
+// export class PropertyBindingComponentModule {
+// }
 //# sourceMappingURL=property-binding.component.module.js.map

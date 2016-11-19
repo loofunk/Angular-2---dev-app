@@ -1,6 +1,7 @@
 import {Component } from '@angular/core';
 import { PropertyBindingComponent } from './property-binding-component/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @Component({
     moduleId:module.id,

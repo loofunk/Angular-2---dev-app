@@ -1,20 +1,20 @@
-// Angular Imports
-import { NgModule } from '@angular/core';
+// // Angular Imports
+// import { NgModule } from '@angular/core';
 
-// This Module's Components
-import { PropertyBindingComponent } from './property-binding.component';
+// // This Module's Components
+// import { PropertyBindingComponent } from './property-binding.component';
 
-@NgModule({
-    imports: [
+// @NgModule({
+//     imports: [
 
-    ],
-    declarations: [
-        PropertyBindingComponent,
-    ],
-    exports: [
-        PropertyBindingComponent,
-    ]
-})
-export class PropertyBindingComponentModule {
+//     ],
+//     declarations: [
+//         PropertyBindingComponent,
+//     ],
+//     exports: [
+//         PropertyBindingComponent,
+//     ]
+// })
+// export class PropertyBindingComponentModule {
 
-}
+// }

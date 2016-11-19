@@ -5,24 +5,20 @@ import { AppComponent }   from './app.component';
 import { DataBindingComponent }   from './data-binding.component';
 import {PropertyBindingComponent} from './property-binding-component/property-binding.component';
 import { EventBindingComponent }   from './event-binding/event-binding.component';
-
+import { TwoWayBindingComponent }   from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, FormsModule ],
   declarations: [ 
    AppComponent,
    DataBindingComponent,
    PropertyBindingComponent,
-   EventBindingComponent
+   EventBindingComponent,
+   TwoWayBindingComponent
    ],
   bootstrap:    [ AppComponent ]
 })
 
 export class AppModule { }
 
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

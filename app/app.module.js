@@ -14,17 +14,20 @@ var app_component_1 = require('./app.component');
 var data_binding_component_1 = require('./data-binding.component');
 var property_binding_component_1 = require('./property-binding-component/property-binding.component');
 var event_binding_component_1 = require('./event-binding/event-binding.component');
+var two_way_binding_component_1 = require('./two-way-binding/two-way-binding.component');
+var forms_1 = require('@angular/forms');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
             declarations: [
                 app_component_1.AppComponent,
                 data_binding_component_1.DataBindingComponent,
                 property_binding_component_1.PropertyBindingComponent,
-                event_binding_component_1.EventBindingComponent
+                event_binding_component_1.EventBindingComponent,
+                two_way_binding_component_1.TwoWayBindingComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
@@ -33,9 +36,4 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/ 
 //# sourceMappingURL=app.module.js.map
