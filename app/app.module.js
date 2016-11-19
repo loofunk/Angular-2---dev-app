@@ -16,6 +16,7 @@ var property_binding_component_1 = require('./property-binding-component/propert
 var event_binding_component_1 = require('./event-binding/event-binding.component');
 var two_way_binding_component_1 = require('./two-way-binding/two-way-binding.component');
 var forms_1 = require('@angular/forms');
+var lifecycle_component_1 = require('./lifecycle/lifecycle.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ var AppModule = (function () {
                 data_binding_component_1.DataBindingComponent,
                 property_binding_component_1.PropertyBindingComponent,
                 event_binding_component_1.EventBindingComponent,
-                two_way_binding_component_1.TwoWayBindingComponent
+                two_way_binding_component_1.TwoWayBindingComponent,
+                lifecycle_component_1.LifecycleComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

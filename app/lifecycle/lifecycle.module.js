@@ -8,25 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// Angular Imports
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.delete = false;
+// This Module's Components
+var lifecycle_component_1 = require('./lifecycle.component');
+var LifecycleModule = (function () {
+    function LifecycleModule() {
     }
-    AppComponent.prototype.onClicked = function () {
-        this.delete = true;
-    };
-    AppComponent = __decorate([
-        core_1.Component({
-            // NOTE need a module ID if your using a template
-            moduleId: module.id,
-            selector: 'my-app',
-            // template: '<h1>Hello Angular!</h1>  <fa-databinding></fa-databinding>'
-            templateUrl: 'app.component.html'
+    LifecycleModule = __decorate([
+        core_1.NgModule({
+            imports: [],
+            declarations: [
+                lifecycle_component_1.LifecycleComponent,
+            ],
+            exports: [
+                lifecycle_component_1.LifecycleComponent,
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LifecycleModule);
+    return LifecycleModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LifecycleModule = LifecycleModule;
+//# sourceMappingURL=lifecycle.module.js.map

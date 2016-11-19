@@ -7,6 +7,7 @@ import {PropertyBindingComponent} from './property-binding-component/property-bi
 import { EventBindingComponent }   from './event-binding/event-binding.component';
 import { TwoWayBindingComponent }   from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import {LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
    DataBindingComponent,
    PropertyBindingComponent,
    EventBindingComponent,
-   TwoWayBindingComponent
+   TwoWayBindingComponent,
+   LifecycleComponent
    ],
   bootstrap:    [ AppComponent ]
 })
