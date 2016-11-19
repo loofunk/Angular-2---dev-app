@@ -9,22 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var DataBindingComponent = (function () {
+    function DataBindingComponent() {
     }
-    AppComponent = __decorate([
+    DataBindingComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>Hello Angular!</h1>  <fa-databinding></fa-databinding>'
+            moduleId: module.id,
+            selector: 'fa-databinding',
+            templateUrl: 'data-binding.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], DataBindingComponent);
+    return DataBindingComponent;
 }());
-exports.AppComponent = AppComponent;
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
-//# sourceMappingURL=app.component.js.map
+exports.DataBindingComponent = DataBindingComponent;
+//# sourceMappingURL=data-binding.component.js.map

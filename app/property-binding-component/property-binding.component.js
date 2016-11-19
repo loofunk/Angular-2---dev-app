@@ -9,22 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var PropertyBindingComponent = (function () {
+    function PropertyBindingComponent() {
+        // Makes property bindable from the outside
+        this.result = 0;
     }
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Number)
+    ], PropertyBindingComponent.prototype, "result", void 0);
+    PropertyBindingComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>Hello Angular!</h1>  <fa-databinding></fa-databinding>'
+            moduleId: module.id,
+            selector: 'property-binding',
+            templateUrl: 'property-binding.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], PropertyBindingComponent);
+    return PropertyBindingComponent;
 }());
-exports.AppComponent = AppComponent;
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
-//# sourceMappingURL=app.component.js.map
+exports.PropertyBindingComponent = PropertyBindingComponent;
+//# sourceMappingURL=property-binding.component.js.map
