@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var data_binding_component_1 = require('./data-binding.component');
 var property_binding_component_1 = require('./property-binding-component/property-binding.component');
+var event_binding_component_1 = require('./event-binding/event-binding.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,7 +23,8 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 data_binding_component_1.DataBindingComponent,
-                property_binding_component_1.PropertyBindingComponent
+                property_binding_component_1.PropertyBindingComponent,
+                event_binding_component_1.EventBindingComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

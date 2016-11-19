@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import { DataBindingComponent }   from './data-binding.component';
 import {PropertyBindingComponent} from './property-binding-component/property-binding.component';
-
+import { EventBindingComponent }   from './event-binding/event-binding.component';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import {PropertyBindingComponent} from './property-binding-component/property-bi
   declarations: [ 
    AppComponent,
    DataBindingComponent,
-   PropertyBindingComponent
+   PropertyBindingComponent,
+   EventBindingComponent
    ],
   bootstrap:    [ AppComponent ]
 })
