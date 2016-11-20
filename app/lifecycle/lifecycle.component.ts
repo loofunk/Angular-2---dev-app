@@ -7,7 +7,8 @@ import {
     AfterContentChecked, 
     AfterViewInit,
     AfterViewChecked,
-    OnDestroy 
+    OnDestroy ,
+    Input
     } 
 from '@angular/core';
 
@@ -21,7 +22,7 @@ from '@angular/core';
 export class LifecycleComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, 
 AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
-    
+    @Input() bindable = 1000;
 
     constructor(){        
     }
@@ -62,9 +63,9 @@ AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
     ngOnDestroy()
     {
-        this.Log('ngOnDestroy'); 
+        this.Log('ngOnDestroy');
+        this.Log('It has been destroyed!!'); 
     }
-
 
     ngAfterDestroy()
     {

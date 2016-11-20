@@ -5,17 +5,19 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
   // NOTE need a module ID if your using a template
   moduleId:module.id,
-  selector: 'my-app',
-  // template: '<h1>Hello Angular!</h1>  <fa-databinding></fa-databinding>'
+  selector: 'my-app',  
   templateUrl: 'app.component.html'
 
 })
 export class AppComponent { 
 
   delete = false;
+  test= 'starting value';
+  boundValue = 10;
 
   onClicked()
   {    
-    this.delete = true;    
+      this.delete = true;    
   }
+  
 }

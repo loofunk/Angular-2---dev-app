@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.delete = false;
+        this.test = 'starting value';
+        this.boundValue = 10;
     }
     AppComponent.prototype.onClicked = function () {
         this.delete = true;
@@ -21,7 +23,6 @@ var AppComponent = (function () {
             // NOTE need a module ID if your using a template
             moduleId: module.id,
             selector: 'my-app',
-            // template: '<h1>Hello Angular!</h1>  <fa-databinding></fa-databinding>'
             templateUrl: 'app.component.html'
         }), 
         __metadata('design:paramtypes', [])

@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var LifecycleComponent = (function () {
     function LifecycleComponent() {
+        this.bindable = 1000;
     }
     LifecycleComponent.prototype.ngOnChanges = function () {
         this.Log('ngOnChanges');
@@ -35,6 +36,7 @@ var LifecycleComponent = (function () {
     };
     LifecycleComponent.prototype.ngOnDestroy = function () {
         this.Log('ngOnDestroy');
+        this.Log('It has been destroyed!!');
     };
     LifecycleComponent.prototype.ngAfterDestroy = function () {
         this.Log('ngAfterDestroy');
@@ -42,6 +44,10 @@ var LifecycleComponent = (function () {
     LifecycleComponent.prototype.Log = function (hook) {
         console.log(hook);
     };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], LifecycleComponent.prototype, "bindable", void 0);
     LifecycleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

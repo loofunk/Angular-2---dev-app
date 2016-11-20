@@ -5,9 +5,19 @@
 
 <h2>Life cycle </h2>
 
-<lifecycle *ngIf="!delete"></lifecycle>
+<lifecycle *ngIf="!delete" [bindable]= "boundValue">
+
+    <b>this is passed in the ng-content</b>
+               
+    <p>{{test}}</p>
+</lifecycle>
+
+<button (click)="boundValue='2000'">Click to change Bindable value </button>
+
+<hr>
 
 <b>This will destroy the lifecycle component invoking the destory hook, notice it being removed. Also view the console to view 
     the order of the hooks
 <button (click)="onClicked()">Click Me! </button>
 
+<button (click)="test='value changed'">Click to change Content inside the lifecycle component </button>
