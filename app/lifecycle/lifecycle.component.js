@@ -24,12 +24,14 @@ var LifecycleComponent = (function () {
     };
     LifecycleComponent.prototype.ngAfterContentInit = function () {
         this.Log('ngAfterContentInit');
+        console.log(this.boundContent);
     };
     LifecycleComponent.prototype.ngAfterContentChecked = function () {
         this.Log('ngAfterContentChecked');
     };
     LifecycleComponent.prototype.ngAfterViewInit = function () {
         this.Log('ngAfterViewInit');
+        console.log(this.boundParagraph);
     };
     LifecycleComponent.prototype.ngAfterViewChecked = function () {
         this.Log('ngAfterViewChecked');
@@ -48,6 +50,14 @@ var LifecycleComponent = (function () {
         core_1.Input(), 
         __metadata('design:type', Object)
     ], LifecycleComponent.prototype, "bindable", void 0);
+    __decorate([
+        core_1.ViewChild('boundParagraph'), 
+        __metadata('design:type', HTMLElement)
+    ], LifecycleComponent.prototype, "boundParagraph", void 0);
+    __decorate([
+        core_1.ContentChild('boundContent'), 
+        __metadata('design:type', HTMLElement)
+    ], LifecycleComponent.prototype, "boundContent", void 0);
     LifecycleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
