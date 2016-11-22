@@ -20,6 +20,8 @@ var lifecycle_component_1 = require('./lifecycle/lifecycle.component');
 var header_component_1 = require('./header/header.component');
 var recipe_book_component_1 = require('./recipe-book/recipe-book.component');
 var recipes_component_1 = require('./recipes/recipes.component');
+var recipeitem_component_1 = require('./recipes/recipelist/recipeitem.component');
+var recipelist_component_1 = require('./recipes/recipelist/recipelist.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -35,7 +37,9 @@ var AppModule = (function () {
                 lifecycle_component_1.LifecycleComponent,
                 header_component_1.HeaderComponent,
                 recipe_book_component_1.RecipeBookComponent,
-                recipes_component_1.RecipesComponent
+                recipes_component_1.RecipesComponent,
+                recipeitem_component_1.RecipeitemComponent,
+                recipelist_component_1.RecipelistComponent
             ],
             bootstrap: [app_component_1.AppComponent, recipe_book_component_1.RecipeBookComponent]
         }), 

@@ -11,6 +11,8 @@ import {LifecycleComponent } from './lifecycle/lifecycle.component';
 import {HeaderComponent} from './header/header.component';
 import {RecipeBookComponent} from './recipe-book/recipe-book.component';
 import {RecipesComponent } from './recipes/recipes.component';
+import {RecipeitemComponent} from './recipes/recipelist/recipeitem.component';
+import {RecipelistComponent} from './recipes/recipelist/recipelist.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -23,7 +25,9 @@ import {RecipesComponent } from './recipes/recipes.component';
    LifecycleComponent,
    HeaderComponent,
    RecipeBookComponent,
-   RecipesComponent
+   RecipesComponent,
+   RecipeitemComponent,
+   RecipelistComponent
    ],
   bootstrap:    [ AppComponent,RecipeBookComponent ]
 })

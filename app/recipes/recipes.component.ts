@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RecipelistComponent} from '../recipes/recipelist/recipelist.component';
 
 @Component({
     moduleId: module.id,
