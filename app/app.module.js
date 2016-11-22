@@ -17,6 +17,8 @@ var event_binding_component_1 = require('./event-binding/event-binding.component
 var two_way_binding_component_1 = require('./two-way-binding/two-way-binding.component');
 var forms_1 = require('@angular/forms');
 var lifecycle_component_1 = require('./lifecycle/lifecycle.component');
+var header_component_1 = require('./header/header.component');
+var recipe_book_component_1 = require('./recipe-book/recipe-book.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,9 +31,11 @@ var AppModule = (function () {
                 property_binding_component_1.PropertyBindingComponent,
                 event_binding_component_1.EventBindingComponent,
                 two_way_binding_component_1.TwoWayBindingComponent,
-                lifecycle_component_1.LifecycleComponent
+                lifecycle_component_1.LifecycleComponent,
+                header_component_1.HeaderComponent,
+                recipe_book_component_1.RecipeBookComponent
             ],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent, recipe_book_component_1.RecipeBookComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

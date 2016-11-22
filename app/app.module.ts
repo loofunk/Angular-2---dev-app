@@ -8,6 +8,8 @@ import { EventBindingComponent }   from './event-binding/event-binding.component
 import { TwoWayBindingComponent }   from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import {LifecycleComponent } from './lifecycle/lifecycle.component';
+import {HeaderComponent} from './header/header.component';
+import {RecipeBookComponent} from './recipe-book/recipe-book.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -17,9 +19,11 @@ import {LifecycleComponent } from './lifecycle/lifecycle.component';
    PropertyBindingComponent,
    EventBindingComponent,
    TwoWayBindingComponent,
-   LifecycleComponent
+   LifecycleComponent,
+   HeaderComponent,
+   RecipeBookComponent
    ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent,RecipeBookComponent ]
 })
 
 export class AppModule { }
