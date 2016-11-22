@@ -19,6 +19,7 @@ var forms_1 = require('@angular/forms');
 var lifecycle_component_1 = require('./lifecycle/lifecycle.component');
 var header_component_1 = require('./header/header.component');
 var recipe_book_component_1 = require('./recipe-book/recipe-book.component');
+var recipes_component_1 = require('./recipes/recipes.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +34,8 @@ var AppModule = (function () {
                 two_way_binding_component_1.TwoWayBindingComponent,
                 lifecycle_component_1.LifecycleComponent,
                 header_component_1.HeaderComponent,
-                recipe_book_component_1.RecipeBookComponent
+                recipe_book_component_1.RecipeBookComponent,
+                recipes_component_1.RecipesComponent
             ],
             bootstrap: [app_component_1.AppComponent, recipe_book_component_1.RecipeBookComponent]
         }), 

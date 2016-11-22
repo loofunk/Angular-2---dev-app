@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import {LifecycleComponent } from './lifecycle/lifecycle.component';
 import {HeaderComponent} from './header/header.component';
 import {RecipeBookComponent} from './recipe-book/recipe-book.component';
+import {RecipesComponent } from './recipes/recipes.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -21,7 +22,8 @@ import {RecipeBookComponent} from './recipe-book/recipe-book.component';
    TwoWayBindingComponent,
    LifecycleComponent,
    HeaderComponent,
-   RecipeBookComponent
+   RecipeBookComponent,
+   RecipesComponent
    ],
   bootstrap:    [ AppComponent,RecipeBookComponent ]
 })
