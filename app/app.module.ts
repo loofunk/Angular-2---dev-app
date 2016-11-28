@@ -8,11 +8,11 @@ import { EventBindingComponent }   from './event-binding/event-binding.component
 import { TwoWayBindingComponent }   from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import {LifecycleComponent } from './lifecycle/lifecycle.component';
-import {HeaderComponent} from './header/header.component';
-import {RecipeBookComponent} from './recipe-book/recipe-book.component';
-import {RecipesComponent } from './recipes/recipes.component';
-import {RecipeitemComponent} from './recipes/recipelist/recipeitem.component';
-import {RecipelistComponent} from './recipes/recipelist/recipelist.component';
+
+
+
+// with an index file which specifies which files to export
+import { WithindexfileComponent } from './withindexfile/withindexfile.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -23,13 +23,11 @@ import {RecipelistComponent} from './recipes/recipelist/recipelist.component';
    EventBindingComponent,
    TwoWayBindingComponent,
    LifecycleComponent,
-   HeaderComponent,
-   RecipeBookComponent,
-   RecipesComponent,
-   RecipeitemComponent,
-   RecipelistComponent
+   
+ 
+   WithindexfileComponent
    ],
-  bootstrap:    [ AppComponent,RecipeBookComponent ]
+  bootstrap:    [ AppComponent ]
 })
 
 export class AppModule { }

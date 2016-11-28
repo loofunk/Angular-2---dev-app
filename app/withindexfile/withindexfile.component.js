@@ -8,26 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// Angular Imports
 var core_1 = require('@angular/core');
-// This Module's Components
-var recipes_component_1 = require('./recipes.component');
-var RecipesModule = (function () {
-    function RecipesModule() {
+var WithindexfileComponent = (function () {
+    function WithindexfileComponent() {
     }
-    RecipesModule = __decorate([
-        core_1.NgModule({
-            imports: [],
-            declarations: [
-                recipes_component_1.RecipesComponent,
-            ],
-            exports: [
-                recipes_component_1.RecipesComponent,
-            ]
+    WithindexfileComponent.prototype.ngOnInit = function () { };
+    WithindexfileComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'withindexfile',
+            templateUrl: 'withindexfile.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], RecipesModule);
-    return RecipesModule;
+    ], WithindexfileComponent);
+    return WithindexfileComponent;
 }());
-exports.RecipesModule = RecipesModule;
-//# sourceMappingURL=recipes.module.js.map
+exports.WithindexfileComponent = WithindexfileComponent;
+//# sourceMappingURL=withindexfile.component.js.map

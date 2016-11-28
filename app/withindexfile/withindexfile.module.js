@@ -11,23 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // Angular Imports
 var core_1 = require('@angular/core');
 // This Module's Components
-var recipelist_component_1 = require('./recipelist.component');
-var RecipelistModule = (function () {
-    function RecipelistModule() {
+var withindexfile_component_1 = require('./withindexfile.component');
+var WithindexfileModule = (function () {
+    function WithindexfileModule() {
     }
-    RecipelistModule = __decorate([
+    WithindexfileModule = __decorate([
         core_1.NgModule({
             imports: [],
             declarations: [
-                recipelist_component_1.RecipelistComponent,
+                withindexfile_component_1.WithindexfileComponent,
             ],
             exports: [
-                recipelist_component_1.RecipelistComponent,
+                withindexfile_component_1.WithindexfileComponent,
             ]
         }), 
         __metadata('design:paramtypes', [])
-    ], RecipelistModule);
-    return RecipelistModule;
+    ], WithindexfileModule);
+    return WithindexfileModule;
 }());
-exports.RecipelistModule = RecipelistModule;
-//# sourceMappingURL=recipelist.module.js.map
+exports.WithindexfileModule = WithindexfileModule;
+//# sourceMappingURL=withindexfile.module.js.map
